@@ -1,5 +1,5 @@
 ## Useful links
-- [DEMO LINK](https://yurko-komanitskyi.github.io/PhoneCatalog/)
+- [DEMO LINK](https://yurko-komanitskyi.github.io/product_listing_page/)
 
 ## Getting Started
 To set up and run the project locally, follow these steps:

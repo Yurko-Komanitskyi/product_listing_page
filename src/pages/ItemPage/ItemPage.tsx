@@ -16,7 +16,7 @@ export const ItemPage: React.FC = () => {
 
   useEffect(() => {
     setLoader(true);
-    fetch(`/api/figures.json`)
+    fetch(`/product_listing_page/api/figures.json`)
       .then(response => response.json())
       .then(data => {
         setfigure(data.find((a: Figure) => a.id === itemId));

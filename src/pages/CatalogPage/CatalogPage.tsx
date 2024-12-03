@@ -24,7 +24,7 @@ export const CatalogPage: React.FC = () => {
 
   useEffect(() => {
     setLoader(true);
-    fetch(`/api/figures.json`)
+    fetch(`/product_listing_page/api/figures.json`)
       .then(response => response.json())
       .then(data => setProducts(data))
       .catch(() => setError(true))

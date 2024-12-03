@@ -1,0 +1,61 @@
+@use '../../styles/variables' as v;
+
+.react-select {
+  &__control {
+    background-color: v.$colorCardBG !important;
+    border-color: v.$colorText !important;
+
+    &:hover {
+      border-color: v.$colorSecondary !important;
+    }
+
+    &--is-focused {
+      border-color: v.$colorSecondary !important;
+      box-shadow: 0 0 0 2px v.$colorSecondary !important;
+    }
+  }
+
+  &__menu {
+    background-color: v.$colorBG !important;
+  }
+  
+  &__option {
+    background-color: v.$colorCardBG !important;
+    color: v.$colorText;
+
+    &:hover {
+      background-color: v.$colorBG !important;
+      color: v.$colorText !important;
+    }
+
+    &--is-selected {
+      background-color: v.$colorSecondary !important;
+      color: v.$colorCardBG !important;
+    }
+
+    &--is-focused {
+      background-color: v.$colorBG !important;
+      color: v.$colorText !important;
+    }
+  }
+
+  &__indicator-separator {
+    background-color: v.$colorSecondary !important;
+  }
+
+  &__single-value {
+    color: v.$colorText !important;
+  }
+
+  &__placeholder {
+    color: v.$colorSecondary !important;
+  }
+
+  &__indicator {
+    color: v.$colorSecondary !important;
+
+    &:hover {
+      color: v.$colorText !important;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@use './variables' as v;
+@use './mixins' as mix;
+
+@font-face {
+  font-family: Mont;
+  src: local("Mont-Regular"),
+    url("./fonts/Mont-Regular.otf");
+}
+
+@font-face {
+  font-family: Mont-Bold;
+  src: local("Mont-Bold"),
+    url("./fonts/Mont-Bold.otf");
+}
+
+@font-face {
+  font-family: Mont-SemiBold;
+  src: local("Mont-SemiBold"),
+  url("./fonts/Mont-SemiBold.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  background-color: v.$colorBG;
+  font-family: Mont, serif;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.01em;
+  color: v.$colorText;
+  font-family: Mont-Bold, serif;
+
+  @include mix.respond-to(mobile) {
+    line-height: 41px;
+    font-size: 32px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: 0;
+  color: v.$colorText;
+  font-family: Mont-Bold, serif;
+
+  @include mix.respond-to(mobile) {
+    line-height: 31px;
+    font-size: 22px;
+  }
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 31px;
+  letter-spacing: 0;
+  color: v.$colorText;
+  font-family: Mont-Bold, serif;
+
+  @include mix.respond-to(mobile) {
+    line-height: 26px;
+    font-size: 20px;
+    font-family: Mont-SemiBold, serif;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid  v.$colorElements;
+}

@@ -1,0 +1,29 @@
+@use './variables' as v;
+
+@mixin square ($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 639px) { @content; }
+  } @else if $breakpoint == tablet {
+    @media (max-width: 1199px) { @content; }
+  }
+}
+
+@mixin smallText {
+  font-family: Mont-SemiBold, serif;
+  font-size: 12px;
+  line-height: 15px;
+  color: v.$colorText;
+  letter-spacing: 0;
+}
+
+@mixin bodyText {
+  font-size: 14px;
+  line-height: 21px;
+  color: v.$colorText;
+  letter-spacing: 0;
+}

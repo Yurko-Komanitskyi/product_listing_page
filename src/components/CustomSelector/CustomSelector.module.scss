@@ -1,0 +1,21 @@
+@use '../../styles/mixins' as mix;
+@use '../../styles/variables' as v;
+
+.customSelector {
+  height: 59px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 176px;
+
+  @include mix.respond-to(mobile) {
+    width: 136px;
+  }
+  
+  &__title {
+    @include mix.smallText;
+  
+    color: v.$colorSecondary;
+    width: 136px;
+  }
+}

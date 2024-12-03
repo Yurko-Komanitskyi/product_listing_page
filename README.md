@@ -1,9 +1,9 @@
-# React TypeScript Starter Pack
+## Useful links
+- [DEMO LINK](https://yurko-komanitskyi.github.io/PhoneCatalog/)
 
-To use this template click `Use this template`
-
-### Available Scripts
-
-`Deploy` - available to deploy your application to gh-pages
-
-`SCSS Preprocessor` - available to write your styles with modern style language
+## Getting Started
+To set up and run the project locally, follow these steps:
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Install dependencies by running `npm install`
+4. Start the project `npm start`

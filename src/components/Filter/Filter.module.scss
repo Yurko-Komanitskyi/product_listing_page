@@ -1,0 +1,80 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as mix;
+
+.filter {
+  padding-bottom: 20px;
+  &__selectors {
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    display: flex;
+    gap: 16px;
+  }
+
+  &__clear {
+    display: block;
+    margin-top: 20px;
+
+    @include mix.bodyText;
+
+    color: v.$colorSecondary;
+    cursor: pointer;
+
+     &--active {
+      color: v.$colorText;
+     }
+  }
+
+  .range {
+    width: 100%;
+    max-width: 365px;
+
+    &__title {
+      @include mix.smallText;
+    
+      color: v.$colorSecondary;
+      width: 136px;
+    }
+  
+    .customSlider {
+      .rc-slider-rail {
+        background-color: v.$colorRail;
+        height: 6px;
+      }
+  
+      .rc-slider-track {
+        background-color: v.$colorTrack;
+        height: 6px;
+      }
+  
+      .rc-slider-handle {
+        width: 18px;
+        height: 18px;
+        border: 2px solid v.$colorHandle;
+        background-color: v.$colorCardBG;
+        margin-top: -6px;
+  
+        &:hover {
+          border-color: v.$colorSecondary;
+        }
+  
+        &:focus {
+          box-shadow: 0 0 0 4px rgba(69, 123, 157, 0.5);
+        }
+      }
+  
+      .rc-slider-handle:active {
+        background-color: v.$colorSecondary;
+      }
+    }
+  
+    .values {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      color: v.$colorText;
+    }
+  }
+}

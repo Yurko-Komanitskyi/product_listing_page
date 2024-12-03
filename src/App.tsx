@@ -1,21 +1,32 @@
-import React from 'react';
-import './App.scss';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { NotFoundPage } from './pages/NotFound/NotFoundPage';
+import { ItemPage } from './pages/ItemPage/ItemPage';
+import { CatalogPage } from './pages/CatalogPage/CatalogPage';
 
-interface Props {
-  onClick: () => void;
-  children: React.ReactNode;
-}
+export const App = () => {
+  const router = createHashRouter([
+    {
+      path: '/',
+      children: [
+        {
+          index: true,
+          element: <CatalogPage />,
+        },
+        {
+          path: '/:itemId',
+          element: <ItemPage />,
+        },
+        {
+          path: '*',
+          element: <NotFoundPage />,
+        },
+        {
+          path: '/404',
+          element: <NotFoundPage />,
+        },
+      ],
+    },
+  ]);
 
-export const Provider: React.FC<Props> = React.memo(({ onClick, children }) => (
-  <button type="button" onClick={onClick}>
-    {children}
-  </button>
-));
-
-export const App: React.FC = () => {
-  return (
-    <div className="starter">
-      <Provider onClick={() => ({})}>TodoList</Provider>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 };

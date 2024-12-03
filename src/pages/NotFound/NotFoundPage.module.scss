@@ -1,0 +1,21 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as mix;
+
+.NotFoundPage {
+  display: flex;
+  padding: 50px;
+  gap: 50px;
+  align-items: center;
+
+  @include mix.respond-to(mobile) {
+    flex-direction: column;
+  }
+
+  &__link {
+    cursor: pointer;
+  }
+
+  &__linkText {
+    color: v.$colorSecondary;
+  }
+}

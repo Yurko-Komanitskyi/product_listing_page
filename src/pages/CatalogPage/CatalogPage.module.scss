@@ -1,0 +1,48 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as mix;
+
+.catalogPage {
+  padding: 0 30px 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  &__topgroup {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mix.respond-to(tablet) {
+      flex-direction: column;
+      align-items: start;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title {
+    text-transform: capitalize;
+  }
+
+  &__searchLabel {
+    @include mix.bodyText;
+    margin-right: 20px;
+    color: v.$colorSecondary;
+  }
+
+  &__search {
+    background-color: v.$colorElements;
+    padding: 2px;
+    height: 28px;
+    border-radius: 5px;
+
+    @include mix.bodyText;
+  }
+
+  &__modelCount {
+    margin-top: 8px;
+
+    @include mix.bodyText;
+
+    color: v.$colorSecondary;
+  }
+}

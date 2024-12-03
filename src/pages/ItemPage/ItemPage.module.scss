@@ -1,0 +1,68 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as mix;
+
+.figurePage {
+  background-color: v.$colorBG;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+
+  &__card {
+    background-color: v.$colorCardBG;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    color: v.$colorText;
+  }
+
+  &__info {
+    display: flex;
+    gap: 30px;
+
+    @include mix.respond-to(tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &__name {
+    margin: 15px 0;
+  }
+
+  &__backButton {
+    @include mix.bodyText;
+    cursor: pointer;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: v.$colorText;
+    margin-bottom: 15px;
+  }
+
+  &__price {
+    font-size: 16px;
+    font-weight: bold;
+    color: v.$colorSecondary;
+    margin-bottom: 10px;
+  }
+
+  &__category {
+    font-size: 14px;
+    color: v.$colorTrack;
+  }
+
+  &__notFound {
+    font-size: 18px;
+    color: v.$colorText;
+    text-align: center;
+  }
+}

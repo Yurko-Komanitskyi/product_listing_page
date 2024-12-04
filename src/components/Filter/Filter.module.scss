@@ -16,6 +16,7 @@
     display: block;
     width: 90px;
     margin-top: 20px;
+    visibility: hidden;
 
     @include mix.bodyText;
 
@@ -24,6 +25,7 @@
     &--active {
       color: v.$colorText;
       cursor: pointer;
+      visibility: visible;
 
       &:hover {
         color: v.$colorTrack;

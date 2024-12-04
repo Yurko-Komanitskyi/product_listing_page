@@ -36,10 +36,17 @@
   &__search {
     background-color: v.$colorElements;
     padding: 2px;
-    height: 28px;
+    height: 30px;
     border-radius: 5px;
+    border-width: 1px;
     flex-grow: 1;
     max-width: 191px;
+    outline: none;
+    transition: none;
+
+    &:focus {
+      border: 3px solid v.$colorSecondary;
+    }
 
     @include mix.bodyText;
   }

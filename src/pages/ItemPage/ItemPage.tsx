@@ -39,7 +39,7 @@ export const ItemPage: React.FC = () => {
             <div className={styles.figurePage__card}>
               <span
                 className={styles.figurePage__backButton}
-                onClick={() => navigate(-1)}
+                onClick={() => navigate('/')}
               >
                 {'<- back'}
               </span>
@@ -54,6 +54,7 @@ export const ItemPage: React.FC = () => {
                   <p className={styles.figurePage__description}>
                     {figure?.description}
                   </p>
+                  <hr />
                   <p className={styles.figurePage__price}>
                     Price: ${figure?.price.toFixed(2)}
                   </p>

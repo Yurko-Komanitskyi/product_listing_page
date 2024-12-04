@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import debounce from 'lodash.debounce';
 
 import { Figure } from '../../types/Figure';
 import { SortType } from '../../types/SortType';
@@ -15,6 +16,7 @@ export const CatalogPage: React.FC = () => {
   const [loader, setLoader] = useState(false);
   const [error, setError] = useState(false);
   const [search, setSearch] = useState('');
+  const [query, setQuery] = useState('');
 
   const filter = useAppSelector(state => state.filter.data) as {
     sortType: SortType;
@@ -31,6 +33,19 @@ export const CatalogPage: React.FC = () => {
       .finally(() => setLoader(false));
   }, []);
 
+  const handleQuery = useCallback(
+    debounce((str: string) => {
+      setQuery(str);
+    }, 700),
+    [],
+  );
+
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setSearch(value);
+    handleQuery(value);
+  };
+
   const filterFigures = useMemo(() => {
     let filteredProducts = [...products];
 
@@ -41,10 +56,10 @@ export const CatalogPage: React.FC = () => {
         );
         break;
       case SortType.PriceHighTolow:
-        filteredProducts = filteredProducts.sort((a, b) => a.price - b.price);
+        filteredProducts = filteredProducts.sort((a, b) => b.price - a.price);
         break;
       case SortType.PriceLowToHigh:
-        filteredProducts = filteredProducts.sort((a, b) => b.price - a.price);
+        filteredProducts = filteredProducts.sort((a, b) => a.price - b.price);
         break;
     }
 
@@ -57,12 +72,12 @@ export const CatalogPage: React.FC = () => {
     );
 
     filteredProducts = filteredProducts.filter(item =>
-      item.name.toLowerCase().includes(search.toLowerCase()),
+      item.name.toLowerCase().includes(query.toLowerCase()),
     );
 
     return filteredProducts;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [filter, loader, search]);
+  }, [filter, loader, query]);
 
   return (
     <div className={styles.catalogPage}>
@@ -72,7 +87,16 @@ export const CatalogPage: React.FC = () => {
         <>
           <div className={styles.catalogPage__topgroup}>
             <h1 className={styles.catalogPage__title}>Funko Pops</h1>
-            <div>
+            <div className={styles.catalogPage__searchGroup}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+              >
+                {/* eslint-disable-next-line max-len */}
+                <path d="M21.172 24l-7.387-7.387c-1.388.874-3.024 1.387-4.785 1.387-4.971 0-9-4.029-9-9s4.029-9 9-9 9 4.029 9 9c0 1.761-.514 3.398-1.387 4.785l7.387 7.387-2.828 2.828zm-12.172-8c3.859 0 7-3.14 7-7s-3.141-7-7-7-7 3.14-7 7 3.141 7 7 7z" />
+              </svg>
               <label
                 htmlFor="search"
                 className={styles.catalogPage__searchLabel}
@@ -84,13 +108,13 @@ export const CatalogPage: React.FC = () => {
                 id="search"
                 className={styles.catalogPage__search}
                 value={search}
-                onChange={e => setSearch(e.target.value)}
+                onChange={handleSearch}
               />
             </div>
           </div>
           <span
             className={styles.catalogPage__modelCount}
-          >{`${products.length} models`}</span>
+          >{`${filterFigures.length} models`}</span>
           {products.length === 0 && !loader ? (
             <div>
               <h2>{`There are no Funko Pops yet`}</h2>

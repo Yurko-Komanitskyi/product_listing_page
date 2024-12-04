@@ -3,16 +3,14 @@
 
 .cardSkeleton {
   padding: 32px;
-  height: 506px;
   display: flex;
+  height: 365px;
   width: 100%;
   background-color: v.$colorCardBG;
   flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   gap: 8px;
-  
-  @include mix.respond-to(tablet) {
-    height: 512px;
-  }
 
   @include mix.respond-to(mobile) {
     height: 439px;
@@ -31,7 +29,6 @@
     }
   }
 
-
   &__title {
     margin-top: 16px;
 
@@ -42,5 +39,4 @@
     margin-bottom: 10px;
     height: 20px;
   }
-
 }

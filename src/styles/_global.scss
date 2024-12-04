@@ -3,20 +3,17 @@
 
 @font-face {
   font-family: Mont;
-  src: local("Mont-Regular"),
-    url("./fonts/Mont-Regular.otf");
+  src: local('Mont-Regular'), url('./fonts/Mont-Regular.otf');
 }
 
 @font-face {
   font-family: Mont-Bold;
-  src: local("Mont-Bold"),
-    url("./fonts/Mont-Bold.otf");
+  src: local('Mont-Bold'), url('./fonts/Mont-Bold.otf');
 }
 
 @font-face {
   font-family: Mont-SemiBold;
-  src: local("Mont-SemiBold"),
-  url("./fonts/Mont-SemiBold.otf");
+  src: local('Mont-SemiBold'), url('./fonts/Mont-SemiBold.otf');
 }
 
 * {
@@ -77,5 +74,5 @@ a {
 
 hr {
   border: 0;
-  border-top: 1px solid  v.$colorElements;
+  border-top: 2px solid v.$colorText;
 }

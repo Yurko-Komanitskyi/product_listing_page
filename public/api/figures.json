@@ -2,7 +2,7 @@
   {
     "id": "1",
     "name": "Harry Potter",
-    "image": "img/fankoPop/HarryPotter.jpg",
+    "image": "img/fankoPop/HarryPotter.png",
     "price": 20.33,
     "category": "Harry Potter",
     "description": "A Funko Pop figure of Harry Potter, the famous wizard from the Hogwarts School of Witchcraft and Wizardry. This collectible figurine captures the essence of Harry with his iconic round glasses, lightning bolt scar, and wand ready for action. Perfect for fans of the magical world, whether you're a fan of the books, movies, or both, this detailed figure makes for an excellent display piece or gift for anyone who dreams of the wizarding world."
@@ -10,7 +10,7 @@
   {
     "id": "2",
     "name": "Darth Vader",
-    "image": "img/fankoPop/DarthVader.jpg",
+    "image": "img/fankoPop/DarthVader.png",
     "price": 34.17,
     "category": "Star Wars",
     "description": "A Funko Pop figure of Darth Vader, the iconic Sith Lord from the Star Wars saga. With his distinctive black armor, helmet, and deep voice, Darth Vader is one of the most recognizable characters in the Star Wars universe. This figure beautifully captures his imposing presence and adds a touch of the dark side to any collection. A must-have for Star Wars collectors, it will make a powerful addition to your display and bring a sense of the dark side to any space."
@@ -18,7 +18,7 @@
   {
     "id": "3",
     "name": "Spider-Man",
-    "image": "img/fankoPop/Spider-Man.jpg",
+    "image": "img/fankoPop/Spider-Man.png",
     "price": 17.83,
     "category": "Marvel",
     "description": "A Funko Pop figure of Spider-Man, the friendly neighborhood superhero. This detailed figure shows Spider-Man in his iconic red and blue suit with webbing detail and an action pose ready to swing into action. Perfect for Marvel and Spider-Man fans, this collectible embodies the spirit of the beloved superhero who balances life as a high school student and a crime-fighting hero. Add this figure to your collection and showcase the heart and humor of Spider-Man in your space."
@@ -26,7 +26,7 @@
   {
     "id": "4",
     "name": "Batman",
-    "image": "img/fankoPop/Batman.jpg",
+    "image": "img/fankoPop/Batman.png",
     "price": 15.07,
     "category": "DC",
     "description": "A Funko Pop figure of Batman, Gotham's Dark Knight. This figure features Batman in his iconic black suit with a flowing cape and the Bat symbol on his chest. Known for his unparalleled detective skills and commitment to justice, Batman is a timeless symbol of heroism and resilience. This collectible figure captures Batman's stoic demeanor and vigilant presence, making it a perfect addition for DC fans who admire the complex hero of Gotham. Whether displayed on a shelf or desk, it is sure to captivate attention."
@@ -34,7 +34,7 @@
   {
     "id": "5",
     "name": "Iron Man",
-    "image": "img/fankoPop/IronMan.jpg",
+    "image": "img/fankoPop/IronMan.png",
     "price": 39.16,
     "category": "Marvel",
     "description": "A Funko Pop figure of Iron Man, the genius billionaire superhero. This figure showcases Iron Man in his iconic red and gold armor, complete with intricate details and a confident stance. Tony Stark, known for his brilliance, charisma, and unyielding dedication to protecting the world, is an essential figure for Marvel enthusiasts. This collectible piece perfectly embodies his technological genius and heroic spirit. Place this figure on your shelf to remind you of the power of innovation and resilience."
@@ -42,7 +42,7 @@
   {
     "id": "6",
     "name": "Captain America",
-    "image": "img/fankoPop/CaptainAmerica.jpg",
+    "image": "img/fankoPop/CaptainAmerica.png",
     "price": 29.73,
     "category": "Marvel",
     "description": "A Funko Pop figure of Captain America, the first Avenger. Ideal for Marvel fans who admire Steve Rogers, this figure features Captain America in his classic red, white, and blue suit with his iconic shield in hand, ready to protect and defend. With his unyielding bravery, loyalty, and sense of justice, Captain America stands as a symbol of hope and perseverance. Display this figure proudly to celebrate the timeless legacy of America's greatest hero."
@@ -50,7 +50,7 @@
   {
     "id": "7",
     "name": "Thor",
-    "image": "img/fankoPop/Thor.jpg",
+    "image": "img/fankoPop/Thor.png",
     "price": 35.22,
     "category": "Marvel",
     "description": "A Funko Pop figure of Thor, the God of Thunder. This figure showcases Thor wielding Mjolnir, his enchanted hammer, and depicts him in a powerful stance ready to bring the storm. With his flowing hair and armor adorned with Asgardian details, Thor embodies strength and nobility. A must-have for fans of Asgard's hero, this collectible will remind you of epic battles and heroic tales. Celebrate the legacy of the mighty Thor and add this figure to your Marvel collection."
@@ -58,7 +58,7 @@
   {
     "id": "8",
     "name": "Hulk",
-    "image": "img/fankoPop/Hulk.jpg",
+    "image": "img/fankoPop/Hulk.png",
     "price": 19.98,
     "category": "Marvel",
     "description": "A Funko Pop figure of Hulk, the green powerhouse of the Avengers. This figure showcases Hulk in his classic pose, muscles tensed and ready to smash. Known for his immense strength and unpredictable nature, Hulk represents the raw power and rage of Bruce Banner's alter ego. This collectible figure will make an incredible addition to any Marvel collector's showcase, capturing the spirit of the hero who can turn anger into unstoppable might."
@@ -66,7 +66,7 @@
   {
     "id": "9",
     "name": "Black Widow",
-    "image": "img/fankoPop/BlackWidow.jpg",
+    "image": "img/fankoPop/BlackWidow.png",
     "price": 12.63,
     "category": "Marvel",
     "description": "A Funko Pop figure of Black Widow, the skilled spy and Avenger. This figure captures Natasha Romanoff in her tactical outfit, showcasing her agility and stealth. Known for her combat skills, intelligence, and loyalty to her team, Black Widow stands out as one of the most skilled and determined heroes in the Marvel universe. This collectible figure makes a great gift for fans who appreciate strong, independent, and fierce characters."
@@ -74,7 +74,7 @@
   {
     "id": "10",
     "name": "Groot",
-    "image": "img/fankoPop/Groot.jpg",
+    "image": "img/fankoPop/Groot.png",
     "price": 28.46,
     "category": "Marvel",
     "description": "A Funko Pop figure of Groot, the lovable tree from Guardians of the Galaxy. This figure shows Groot in his unique, adorable form, complete with a friendly smile and intricate wood-like details. Known for his simple yet profound phrase 'I am Groot', this figure embodies the heartwarming and charming personality of the beloved Guardian. A must-have for Marvel fans, this collectible adds a touch of whimsy and heart to any display."
@@ -82,7 +82,7 @@
   {
     "id": "11",
     "name": "Loki",
-    "image": "img/fankoPop/Loki.jpg",
+    "image": "img/fankoPop/Loki.png",
     "price": 34.21,
     "category": "Marvel",
     "description": "A Funko Pop figure of Loki, the God of Mischief. This figure showcases Loki with a playful smirk and his signature green and gold attire. Known for his cunning intelligence, shape-shifting abilities, and complicated moral code, Loki is both a villain and an antihero. This figure is perfect for fans who enjoy his mischievous nature and his complex character arc in the Marvel Cinematic Universe."
@@ -90,7 +90,7 @@
   {
     "id": "12",
     "name": "Deadpool",
-    "image": "img/fankoPop/Deadpool.jpg",
+    "image": "img/fankoPop/Deadpool.png",
     "price": 22.62,
     "category": "Marvel",
     "description": "A Funko Pop figure of Deadpool, the hilarious and unconventional antihero. This figure captures Deadpool's signature look with his red and black suit, dual katanas, and playful expression. Known for his irreverent humor, breaking the fourth wall, and unpredictable behavior, Deadpool is a unique and beloved character in the Marvel universe. This figure is perfect for fans who appreciate his comedic style and antihero antics."
@@ -98,7 +98,7 @@
   {
     "id": "13",
     "name": "Wolverine",
-    "image": "img/fankoPop/Wolverine.jpg",
+    "image": "img/fankoPop/Wolverine.png",
     "price": 39.05,
     "category": "Marvel",
     "description": "A Funko Pop figure of Wolverine, the iconic X-Men hero. This figure showcases Wolverine in his classic yellow and blue suit, with sharp claws extended and a determined expression. Known for his fierce personality, regenerative healing, and unmatched fighting skills, Wolverine is a favorite among Marvel fans. Perfect for collectors and fans of the X-Men series, this figure adds an iconic touch to any Marvel collection."
@@ -106,7 +106,7 @@
   {
     "id": "14",
     "name": "Doctor Strange",
-    "image": "img/fankoPop/DoctorStrange.jpg",
+    "image": "img/fankoPop/DoctorStrange.png",
     "price": 12.1,
     "category": "Marvel",
     "description": "A Funko Pop figure of Doctor Strange, the Master of the Mystic Arts. This figure shows Doctor Strange in his signature red cloak and Eye of Agamotto, with a pose that hints at his magical prowess. Known for his mastery of the mystical arts and his journey from a brilliant surgeon to Sorcerer Supreme, Doctor Strange is a key figure in the Marvel universe. This collectible is perfect for fans who admire the magical and cerebral side of superhero storytelling."
@@ -114,7 +114,7 @@
   {
     "id": "15",
     "name": "Thanos",
-    "image": "img/fankoPop/Thanos.jpg",
+    "image": "img/fankoPop/Thanos.png",
     "price": 15.46,
     "category": "Marvel",
     "description": "A Funko Pop figure of Thanos, the Mad Titan and wielder of the Infinity Gauntlet. This figure showcases Thanos with his intense glare and a powerful stance, highlighting his imposing figure. Known for his strategic mind and quest to bring balance to the universe through the Infinity Stones, Thanos is one of the most formidable and iconic villains in the Marvel universe. This collectible figure is essential for Marvel fans who appreciate powerful and complex antagonists."
@@ -122,7 +122,7 @@
   {
     "id": "16",
     "name": "The Flash",
-    "image": "img/fankoPop/TheFlash.jpg",
+    "image": "img/fankoPop/TheFlash.png",
     "price": 11.4,
     "category": "DC",
     "description": "A Funko Pop figure of The Flash, the fastest man alive. This figure showcases The Flash in his red suit with a lightning bolt emblem, ready to break the sound barrier. Known for his speed, quick thinking, and dedication to protecting Central City, The Flash is a symbol of hope and resilience. A great collectible for DC fans, this figure is perfect for adding a burst of energy and excitement to your display."
@@ -130,7 +130,7 @@
   {
     "id": "17",
     "name": "Aquaman",
-    "image": "img/fankoPop/Aquaman.jpg",
+    "image": "img/fankoPop/Aquaman.png",
     "price": 39.27,
     "category": "DC",
     "description": "A Funko Pop figure of Aquaman, the king of Atlantis. This figure captures Aquaman in his signature armor with the trident in hand, embodying the strength and leadership of the ruler of the seven seas. Known for his oceanic powers, bravery, and dedication to protecting the world both on land and sea, Aquaman is a revered figure in the DC universe. This collectible is ideal for fans who admire the power and mystique of the ocean."
@@ -138,7 +138,7 @@
   {
     "id": "18",
     "name": "Green Lantern",
-    "image": "img/fankoPop/GreenLantern.jpg",
+    "image": "img/fankoPop/GreenLantern.png",
     "price": 28.18,
     "category": "DC",
     "description": "A Funko Pop figure of Green Lantern, the bearer of the powerful ring. This figure shows Green Lantern in his green and black uniform, with the ring glowing and ready to project his willpower. Known for his courage, unwavering sense of duty, and ability to conjure constructs of energy, Green Lantern is a hero who fights for justice across the galaxy. This collectible figure is perfect for fans who appreciate heroes who embody willpower and hope."
@@ -146,7 +146,7 @@
   {
     "id": "19",
     "name": "Wonder Woman",
-    "image": "img/fankoPop/WonderWoman.jpg",
+    "image": "img/fankoPop/WonderWoman.png",
     "price": 16.61,
     "category": "DC",
     "description": "A Funko Pop figure of Wonder Woman, the Amazonian warrior princess. This figure depicts Wonder Woman in her iconic red, blue, and gold armor with her lasso of truth and shield at the ready. Known for her courage, wisdom, and compassion, Wonder Woman represents the ideals of justice and equality. She is a powerful symbol of strength and resilience for all. A perfect addition for DC fans and collectors who admire powerful and inspiring female heroes."
@@ -154,7 +154,7 @@
   {
     "id": "20",
     "name": "Superman",
-    "image": "img/fankoPop/Superman.jpg",
+    "image": "img/fankoPop/Superman.png",
     "price": 11.02,
     "category": "DC",
     "description": "A Funko Pop figure of Superman, the iconic Man of Steel. This figure showcases Superman in his classic blue suit with the red cape and S symbol on his chest. Known for his superhuman strength, flight, and dedication to protecting humanity, Superman is a symbol of hope and inspiration. He stands as a beacon of justice and heroism in the DC universe. This collectible is a must-have for any superhero fan who believes in the power of truth, justice, and the American way."

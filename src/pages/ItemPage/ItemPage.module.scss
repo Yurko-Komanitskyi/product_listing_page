@@ -14,6 +14,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 80%;
     color: v.$colorText;
+
+    @include mix.respond-to(mobile) {
+      width: 95%;
+    }
   }
 
   &__info {
@@ -38,31 +42,24 @@
     width: 100%;
     max-width: 400px;
     border-radius: 5px;
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
   }
 
   &__description {
-    font-size: 14px;
-    line-height: 1.5;
+    @include mix.bodyText;
     color: v.$colorText;
     margin-bottom: 15px;
   }
 
   &__price {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
-    color: v.$colorSecondary;
-    margin-bottom: 10px;
+    color: v.$colorText;
+    margin: 10px 0;
   }
 
   &__category {
     font-size: 14px;
     color: v.$colorTrack;
-  }
-
-  &__notFound {
-    font-size: 18px;
-    color: v.$colorText;
-    text-align: center;
   }
 }

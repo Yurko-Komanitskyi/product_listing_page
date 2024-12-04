@@ -19,9 +19,7 @@ export const ProductList: React.FC<Props> = ({ products, loader }) => {
   const [itemOffset, setItemOffset] = useState(10);
 
   const itemsPerPage = +(searchParams.get('perPage') || 0);
-
   const endOffset = itemOffset + itemsPerPage;
-
   const currentItems = itemsPerPage
     ? products.slice(itemOffset, endOffset)
     : products;
@@ -48,11 +46,13 @@ export const ProductList: React.FC<Props> = ({ products, loader }) => {
             .fill(0)
             .map((_, i) => <CardSkeleton key={i} />)}
         {!loader &&
+          products.length !== 0 &&
           currentItems.map(product => {
             return <Card key={product.id} product={product} />;
           })}
+        {!loader && products.length === 0 && <h2>Funko Pop not found.</h2>}
       </div>
-      {itemsPerPage && products.length !== 0 && (
+      {!!itemsPerPage && products.length !== 0 && (
         <ReactPaginate
           breakLabel={'...'}
           nextLabel=""

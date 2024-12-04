@@ -1,14 +1,17 @@
-import styles from './Filter.module.scss';
+import { useEffect, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { SingleValue } from 'react-select';
 import Slider from 'rc-slider';
-import 'rc-slider/assets/index.css';
-import { SortType } from '../../types/SortType';
-import { useAppDispatch, useAppSelector } from '../../utils/hooks';
-import { useSearchParams } from 'react-router-dom';
-import { setDefoult, setMinMax, setSortType } from '../../redux/filter';
-import { CustomSelector } from '../CustomSelector';
-import { useEffect, useState } from 'react';
 import classNames from 'classnames';
+import { CustomSelector } from '../CustomSelector';
+
+import { SortType } from '../../types/SortType';
+
+import { useAppDispatch, useAppSelector } from '../../utils/hooks';
+import { setDefoult, setMinMax, setSortType } from '../../redux/filter';
+
+import styles from './Filter.module.scss';
+import 'rc-slider/assets/index.css';
 
 const optionsSortBy = [
   { value: SortType.Alphabetically, label: 'Alphabetically' },
@@ -31,16 +34,19 @@ export const Filter: React.FC = () => {
     minPrice: number;
     maxPrice: number;
   };
+
   const [range, setRange] = useState<RangeValue>([
     filter.minPrice,
     filter.maxPrice,
   ]);
   const [filterFlag, setFilterFlag] = useState(false);
   const [sortTypeId, setSortTypeId] = useState(0);
+  const [perPageId, setPerPageId] = useState(0);
+
   const dispatch = useAppDispatch();
+
   const [searchParams, setSearchParams] = useSearchParams();
   const perPage = searchParams.get('perPage');
-  const [perPageId, setPerPageId] = useState(0);
 
   useEffect(() => {
     setFilterFlag(

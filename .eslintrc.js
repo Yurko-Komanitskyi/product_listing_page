@@ -1,5 +1,8 @@
 module.exports = {
   extends: ['@mate-academy/eslint-config-react-typescript'],
+  parserOptions: {
+    project: './tsconfig.json',
+  },
   rules: {
     'max-len': ['error', {
       ignoreTemplateLiterals: true,

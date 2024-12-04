@@ -42,6 +42,7 @@ export const CatalogPage: React.FC = () => {
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
+
     setSearch(value);
     handleQuery(value);
   };

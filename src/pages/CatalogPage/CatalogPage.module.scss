@@ -6,6 +6,10 @@
   margin: 0 auto;
   max-width: 1200px;
 
+  @include mix.respond-to(mobile) {
+    padding: 0 16px 40px;
+  }
+
   &__topgroup {
     margin-top: 40px;
     display: flex;
@@ -34,6 +38,8 @@
     padding: 2px;
     height: 28px;
     border-radius: 5px;
+    flex-grow: 1;
+    max-width: 191px;
 
     @include mix.bodyText;
   }
@@ -41,6 +47,10 @@
   &__searchGroup {
     display: flex;
     align-items: center;
+
+    @include mix.respond-to(tablet) {
+      width: 100%;
+    }
   }
 
   &__modelCount {

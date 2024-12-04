@@ -62,6 +62,8 @@ export const Filter: React.FC = () => {
 
     if (perPage) {
       setPerPageId(optionsCardCount.findIndex(item => item.value === perPage));
+    } else {
+      setPerPageId(0);
     }
   }, [filter, perPage]);
 

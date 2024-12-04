@@ -18,7 +18,11 @@
   &__menu {
     background-color: v.$colorBG !important;
   }
-  
+
+  &__menu-list {
+    padding: 0 !important;
+  }
+
   &__option {
     background-color: v.$colorCardBG !important;
     color: v.$colorText;

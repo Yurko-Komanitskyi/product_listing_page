@@ -17,5 +17,9 @@
 
   &__linkText {
     color: v.$colorSecondary;
+
+    &:hover {
+      color: v.$colorText;
+    }
   }
 }

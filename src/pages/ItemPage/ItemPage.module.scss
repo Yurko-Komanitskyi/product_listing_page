@@ -36,6 +36,10 @@
   &__backButton {
     @include mix.bodyText;
     cursor: pointer;
+
+    &:hover {
+      color: v.$colorTrack;
+    }
   }
 
   &__image {

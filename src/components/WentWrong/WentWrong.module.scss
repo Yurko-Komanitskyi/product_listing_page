@@ -11,14 +11,12 @@
     flex-direction: column;
   }
 
-  &__button {
-    color: v.$colorText;
-    align-content: center;
-    width: 300px;
+  &__linkText {
+    cursor: pointer;
+    color: v.$colorSecondary;
 
     &:hover {
-      background-color: #A378FF;
-      ;
+      color: v.$colorText;
     }
   }
 
@@ -36,6 +34,5 @@
     @include mix.respond-to(mobile) {
       @include mix.square(180px);
     }
-
   }
 }

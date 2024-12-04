@@ -10,9 +10,9 @@ export const WentWrong = () => {
     <div className={styles.wentWrong}>
       <div className={styles.wentWrong__contain}>
         <h1>Something went wrong</h1>
-        <button className={styles.wentWrong__button} onClick={reloadPage}>
+        <h3 className={styles.wentWrong__linkText} onClick={reloadPage}>
           Reload
-        </button>
+        </h3>
       </div>
       <img
         src={notFoundImg}

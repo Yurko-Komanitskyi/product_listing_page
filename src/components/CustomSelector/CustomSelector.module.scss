@@ -6,15 +6,15 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  width: 176px;
+  width: 200px;
 
   @include mix.respond-to(mobile) {
     width: 136px;
   }
-  
+
   &__title {
     @include mix.smallText;
-  
+
     color: v.$colorSecondary;
     width: 136px;
   }
